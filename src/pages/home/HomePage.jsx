@@ -35,8 +35,8 @@ export default function HomePage() {
 
   useEffect(() => {
     if (btcData) {
-      dispatch(setDifficulty(btcData[0]?.difficulty));
-      dispatch(setBlockReward(btcData[0]?.reward_block));
+      dispatch(setDifficulty(btcData?.difficulty));
+      dispatch(setBlockReward(btcData?.reward_block));
     }
   }, [loading]);
   return (

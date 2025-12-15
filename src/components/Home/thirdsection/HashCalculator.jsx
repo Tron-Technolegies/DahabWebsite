@@ -10,10 +10,10 @@ export default function HashCalculator({ btcData }) {
   const calculateFunction = () => {
     const dailyCoins = coinsPerDay(
       value,
-      btcData[0].difficulty,
-      btcData[0].reward_block
+      btcData.difficulty,
+      btcData.reward_block
     );
-    const erngs = dailyEarnings(dailyCoins, btcData[0].price);
+    const erngs = dailyEarnings(dailyCoins, btcData.price);
     setCoins(dailyCoins);
     setEarnings(erngs);
   };

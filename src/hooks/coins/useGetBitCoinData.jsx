@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { BASE_URL } from "../../utils/constants";
 
 const useGetBitCoinData = () => {
   const [loading, setLoading] = useState(false);
@@ -8,9 +9,7 @@ const useGetBitCoinData = () => {
   const getBTCData = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(
-        "https://api.minerstat.com/v2/coins?list=BTC,"
-      );
+      const res = await axios.get(`${BASE_URL}/extra/btc`);
       const data = res.data;
       setBtcData(data);
     } catch (error) {
