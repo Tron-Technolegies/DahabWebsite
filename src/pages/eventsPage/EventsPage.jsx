@@ -1,159 +1,85 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, useParams } from "react-router-dom";
-import { events } from "../../utils/events&Celebrations";
-import { CiCalendar, CiLocationOn } from "react-icons/ci";
+import React, { useEffect } from "react";
+import { CiLocationOn } from "react-icons/ci";
+import { IoCalendar } from "react-icons/io5";
+import { Link, useLocation, useParams } from "react-router-dom";
+import Carousel from "../../components/Carousel";
+import { useGetSingleEvent } from "../../hooks/events/useEvents";
+import SkeletonLoading from "../../components/Skeleton";
 import { Helmet } from "react-helmet-async";
-import { FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6";
 
 export default function EventsPage() {
   const location = useLocation();
   const fullUrl = window.location.origin + location.pathname + location.search;
   const { slug } = useParams();
-  const [event, setEvent] = useState(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const event = events.find((x) => x.slug == slug);
-    setEvent(event);
-  }, [slug]);
+  const { isLoading, data } = useGetSingleEvent({ slug });
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const nextImage = () => {
-    if (event?.images) {
-      setCurrentImageIndex((prev) => (prev + 1) % event.images.length);
-    }
-  };
-
-  const prevImage = () => {
-    if (event?.images) {
-      setCurrentImageIndex((prev) => (prev - 1 + event.images.length) % event.images.length);
-    }
-  };
-
-  return (
-    <div className=" text-white">
+  return isLoading ? (
+    <SkeletonLoading />
+  ) : (
+    <>
       <Helmet>
-        <title>Dahab Miners App Launch | Green Bitcoin Mining in UAE & Ethiopia</title>
-        <meta
-          name="description"
-          content="Dahab Miners App launched at Bitcoin Summit Ethiopia 2025 | showcasing sustainable Bitcoin mining powered by hosting farms in the UAE and Ethiopia."
-        />
-        <meta
-          name="keyword"
-          content="Dahab Miners App Ethiopia launch,
-Real Bitcoin mining platform UAE,
-Eco Bitcoin mining company UAE,
-Host Bitcoin miners in Ethiopia,
-Crypto miners UAE,
-Bitcoin Mining in Dubai,
-Miner repair service UAE,
-Host miners in Ethiopia,
-Bitcoin Mining in Dubai,"
-        />
+        <title>{data.metaTitle}</title>
+        <meta name="description" content={data.metaDescription} />
+        <meta name="keyword" content={data.metaKeywords} />
         <link rel="canonical" href={fullUrl || "https://dahabminers.com/"} />
       </Helmet>
-      <section className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex lg:flex-row flex-col gap-5 justify-between items-center">
-        <div className="flex flex-col gap-3">
-          <h1 className="gradient-heading md:text-2xl lg:text-left text-center text-xl font-semibold">
-            {event?.title}
-          </h1>
-          <div className="flex items-center lg:justify-start justify-center gap-2 text-[#A1D3F8]">
-            <CiCalendar />
-            <p>{event?.date}</p>
+      <div className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10">
+        <Link
+          to={"/"}
+          className="px-4 py-2 rounded-md text-white bg-homeBg hover:bg-homeBgGradient ms-auto"
+        >
+          Go Back
+        </Link>
+        <div className="flex gap-10 md:flex-row flex-col items-center mt-10">
+          <div className="md:w-1/3 w-full flex flex-col md:items-start items-center gap-2">
+            <p className="font-semibold md:text-2xl text-lg md:text-left text-center w-full">
+              {data.title}
+            </p>
+            <p className="flex gap-2 items-center md:text-left text-center">
+              <CiLocationOn />
+              <span>{data.location}</span>
+            </p>
+            <p className="flex gap-2 items-center md:text-left text-center">
+              <IoCalendar />
+              <span>{new Date(data.date).toLocaleDateString("en-US")}</span>
+            </p>
+            {data.hostedBy && (
+              <p className="md:text-left text-center w-full">
+                Hosted By:{" "}
+                <span className="font-semibold">{data.hostedBy}</span>
+              </p>
+            )}
           </div>
-          <div className="flex items-center lg:justify-start justify-center gap-2 text-[#A1D3F8]">
-            <CiLocationOn />
-            <p>{event?.location}</p>
-          </div>
-          {event?.hosted && (
-            <div className="flex items-center lg:justify-start justify-center gap-2 text-[#A1D3F8]">
-              <p>Hosted By: </p>
-              <p>{event.hosted}</p>
-            </div>
-          )}
-        </div>
-        <div className="relative">
-          {event?.images && event.images.length > 1 ? (
-            <div className="relative lg:max-w-[650px] max-w-[350px]">
-              <img
-                src={event.images[currentImageIndex]}
-                alt={`${event.alt} - Image ${currentImageIndex + 1}`}
-                className="rounded-md object-cover w-full h-auto"
-                loading="lazy"
-                decoding="async"
-              />
-              <button
-                onClick={prevImage}
-                className="absolute left-2 top-1/2 -translate-y-1/2hover:bg-opacity-75 p-2 rounded-full transition"
-                aria-label="Previous image"
-              >
-                <FaCircleArrowLeft className="text-black" size={24} />
-              </button>
-              {/* Next Button */}
-              <button
-                onClick={nextImage}
-                className="absolute right-2 top-1/2 -translate-y-1/2  bg-opacity-50 hover:bg-opacity-75 p-2 rounded-full transition"
-                aria-label="Next image"
-              >
-                <FaCircleArrowRight className="text-black" size={24} />
-              </button>
-              {/* Image Counter */}
-              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black bg-opacity-70 px-3 py-1 rounded-full text-white text-sm">
-                {currentImageIndex + 1} / {event.images.length}
-              </div>
-              {/* Dots */}
-              <div className="flex justify-center gap-2 mt-3">
-                {event.images.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentImageIndex(index)}
-                    className={`w-2 h-2 rounded-full transition ${
-                      index === currentImageIndex ? "bg-[#A1D3F8]" : "bg-gray-600"
-                    }`}
-                    aria-label={`Go to image ${index + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-          ) : (
-            <img
-              src={event?.imglg}
-              srcSet={`${event?.imgsm} 350w, ${event?.imglg} 650w`}
-              alt={event?.alt}
-              sizes="(max-width: 768px) 350px, 650px"
-              className="rounded-md object-cover lg:max-w-[650px] max-w-[350px]"
-              loading="lazy"
-              decoding="async"
-            />
-          )}
-        </div>
-      </section>
-      <section className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 bg-black flex flex-col gap-5">
-        {event &&
-          Object.keys(event)
-            .filter((key) => key.startsWith("p"))
-            .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-            .map((key) => <p key={key}>{event[key]}</p>)}
-      </section>
-      <section>
-        {event?.btmimg && (
           <img
-            src={event.btmimg}
-            alt={event.alt}
-            className="lg:w-3/5 w-full rounded mx-auto object-cover"
-            loading="lazy"
-            decoding="async"
+            src={data.mainImage?.url}
+            alt={data.altText}
+            className="md:w-2/3 object-cover rounded-lg max-h-[500px]"
+          />
+        </div>
+        <p
+          className="text-white text-justify leading-9 my-5"
+          dangerouslySetInnerHTML={{ __html: data.mainContent }}
+        ></p>
+        {data.extraImage && (
+          <img
+            src={data.extraImage?.url}
+            alt={data.altText}
+            className="object-cover rounded-md my-5 lg:max-w-[900px] mx-auto"
           />
         )}
-        {event?.btmdesc && (
-          <div className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 bg-black flex flex-col gap-5">
-            {event?.btmdesc}
-          </div>
+        {data.bottomContent && (
+          <p
+            className="text-white text-justify leading-9 my-5"
+            dangerouslySetInnerHTML={{ __html: data.bottomContent }}
+          ></p>
         )}
-      </section>
-    </div>
+        <div className="my-5 max-w-[900px] mx-auto">
+          <Carousel images={data.carouselImages} alt={data.altText} />
+        </div>
+      </div>
+    </>
   );
 }
