@@ -3,43 +3,40 @@ import BestSellingProducts from "./BestSellingProducts";
 import SearchAndFilter from "./SearchAndFilter";
 import ProductCard from "./ProductCard";
 import Pagination from "./Pagination";
-import useGetAllProducts from "../../hooks/userProducts/useGetAllProducts";
 import Loading from "../Loading";
 import { useSelector } from "react-redux";
-import useGetFeaturedProducts from "../../hooks/userProducts/useGetFeaturedProducts";
 import Pagination2 from "./Pagination2";
+import {
+  useGetAllProduct,
+  useGetFeaturedProduct,
+} from "../../hooks/userProducts/useProduct";
 
 export default function BuyMinersSection() {
-  const { manufacturerOptions, cryptoCurrencyOption, keyWord, sortby } = useSelector(
-    (state) => state.userProductSearch
-  );
+  const {
+    manufacturerOptions,
+    cryptoCurrencyOption,
+    keyWord,
+    sortby,
+    productCategory,
+  } = useSelector((state) => state.userProductSearch);
   const [totalPage, setTotalPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
-  const { loading: featuredLoading, products: featuredProducts } = useGetFeaturedProducts();
-
-  const { loading, refetch, products, pages } = useGetAllProducts({
+  const { isLoading: featuredLoading, data: featuredProducts } =
+    useGetFeaturedProduct();
+  //loading, refetch, products, pages
+  const { isError, isLoading, data } = useGetAllProduct({
     keyWord,
     cryptoCurrencyOption,
     manufacturerOptions,
     sortby,
     currentPage,
+    productCategory,
   });
   useEffect(() => {
-    setTotalPage(pages);
-  }, [products, loading, refetch]);
-
-  useEffect(() => {
-    refetch();
-    window.scrollTo(0, 0);
-  }, [currentPage]);
-  useEffect(() => {
-    if (products && products.length > 0) {
-      console.log(
-        "SLUGS →",
-        products.map((p) => p.slug)
-      );
+    if (data) {
+      setTotalPage(data.numOfPages);
     }
-  }, [products]);
+  }, [data]);
 
   return (
     <div className="bg-[#000618] px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 z-[1]">
@@ -50,9 +47,13 @@ export default function BuyMinersSection() {
       </div>
       <div className="flex lg:flex-row flex-col gap-2">
         <div className="">
-          <SearchAndFilter refetch={refetch} />
+          <SearchAndFilter />
         </div>
-        {loading ? <Loading /> : <BestSellingProducts products={products} refetch={refetch} />}
+        {isLoading ? (
+          <Loading />
+        ) : (
+          <BestSellingProducts products={data?.products} />
+        )}
       </div>
       {totalPage > 1 && (
         <div className="flex justify-center">
@@ -73,8 +74,8 @@ export default function BuyMinersSection() {
           <Loading />
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 my-10">
-            {featuredProducts?.length > 0 &&
-              featuredProducts
+            {featuredProducts?.products?.length > 0 &&
+              featuredProducts?.products
                 .slice(0, 4)
                 .map((x) => (
                   <ProductCard

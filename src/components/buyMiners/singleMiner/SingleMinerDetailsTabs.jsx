@@ -1,29 +1,7 @@
 import React, { useState } from "react";
-import productFullDetails from "../../../utils/productFullDetails";
 
 export default function SingleMinerDetailsTabs({ product }) {
   const [activeTab, setActiveTab] = useState("description");
-
-  if (!product) return null;
-
-  const productInfo = productFullDetails.find(
-    (p) => p.slug?.toLowerCase().trim() === product.slug?.toLowerCase().trim()
-  );
-
-  const overviewText = productInfo?.overview || product.description;
-
-  const specs =
-    productInfo?.specifications ||
-    [
-      { label: "Manufacturer", value: product.manufacturer },
-      { label: "Algorithm", value: product.algorithm },
-      { label: "Hash Rate", value: product.hashRate },
-      { label: "Power", value: product.power ? `${product.power} W` : null },
-      {
-        label: "Mineable Coins",
-        value: product.cryptoCurrency?.length ? product.cryptoCurrency.join(", ") : null,
-      },
-    ].filter((item) => item.value);
 
   return (
     <div className="mt-12">
@@ -55,7 +33,9 @@ export default function SingleMinerDetailsTabs({ product }) {
       {/* Overview */}
       {activeTab === "description" && (
         <div className="text-gray-300 leading-relaxed whitespace-pre-line">
-          {overviewText || <p className="italic text-gray-500">No overview available.</p>}
+          <p className="italic text-gray-500">
+            {product?.overview || product?.description}
+          </p>
         </div>
       )}
 
@@ -75,15 +55,19 @@ export default function SingleMinerDetailsTabs({ product }) {
             </thead>
 
             <tbody>
-              {specs.map((item, index) => (
+              {product?.productSpecifications?.map((item, index) => (
                 <tr
                   key={index}
                   className={`${
                     index % 2 === 0 ? "bg-[#0e1a20]" : "bg-[#12232d]"
                   } hover:bg-[#18353f] transition`}
                 >
-                  <td className="py-3 px-4 border-b border-[#1ECBAF]/10">{item.label}</td>
-                  <td className="py-3 px-4 border-b border-[#1ECBAF]/10">{item.value}</td>
+                  <td className="py-3 px-4 border-b border-[#1ECBAF]/10">
+                    {item.spec}
+                  </td>
+                  <td className="py-3 px-4 border-b border-[#1ECBAF]/10">
+                    {item.value}
+                  </td>
                 </tr>
               ))}
             </tbody>

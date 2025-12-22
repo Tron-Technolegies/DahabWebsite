@@ -66,6 +66,10 @@ input:disabled {
 .footer-bg {
   background: linear-gradient(180deg, #081433 0%, #000000 165.14%);
 }
+
+.landingHeight {
+  min-height: calc(100vh - 80px);
+}
 .nav-link {
   transition: 0.3s ease-in-out all;
 }

@@ -8,11 +8,10 @@ export default function HomeLayout() {
     <div className="mx-0 ">
       <div className="sticky top-0 z-50 ">
         <Header />
-        <WhatsApp />
       </div>
       <div className="overflow-x-hidden">
         <Outlet />
-
+        <WhatsApp />
         <Footer />
       </div>
     </div>

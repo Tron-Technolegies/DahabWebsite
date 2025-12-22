@@ -1,9 +1,9 @@
 import Slider from "react-slick";
-import useGetFeaturedProducts from "../../../hooks/userProducts/useGetFeaturedProducts";
 import FeaturedCard from "./FeaturedCard";
+import { useGetFeaturedProduct } from "../../../hooks/userProducts/useProduct";
 
 export default function FeaturedCarousel() {
-  const { loading, products } = useGetFeaturedProducts();
+  const { isLoading, data: products } = useGetFeaturedProduct();
 
   const settings = {
     dots: true, // Show dots navigation
@@ -19,7 +19,7 @@ export default function FeaturedCarousel() {
   return (
     <div className="w-full flex justify-center border-2 border-[#004DF480] bg-[#000618] rounded-lg relative p-5 my-10">
       <Slider {...settings} className="w-full ">
-        {products.map((x) => (
+        {products?.products?.map((x) => (
           <FeaturedCard
             key={x._id}
             img={x.featuredImage}

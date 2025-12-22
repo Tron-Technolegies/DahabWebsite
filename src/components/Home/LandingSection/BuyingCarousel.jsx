@@ -6,7 +6,7 @@ export default function BuyingCarousel({ setItem, item }) {
   return (
     <>
       {/* <PgBar setItem={setItem} /> */}
-      <section className="flex lg:flex-row flex-col justify-between items-center pt-28 pb-10 h-fit">
+      <section className="flex lg:flex-row flex-col justify-between items-center pt-28 pb-10 ">
         <div className="flex flex-col lg:items-start items-center lg:text-left text-center max-w-[660px] md:gap-10 gap-5 animate-slideInLeft -mt-20 z-20">
           <div>
             <div className="flex gap-5 items-center">
@@ -50,12 +50,14 @@ export default function BuyingCarousel({ setItem, item }) {
           </div>
           <div>
             <h2 className="text-base font-light text-white leading-6 tracking-wider">
-              <a href="https://www.dahabminers.com/buy-bitcoin-miners-uae/">Crypto Mining in UAE</a>
+              <a href="https://www.dahabminers.com/buy-bitcoin-miners-uae/">
+                Crypto Mining in UAE
+              </a>
             </h2>
             <h4 className="text-base font-light text-white leading-6 tracking-wider text-left">
-              The crypto revolution waits for no one. Equip yourself with cutting edge mining
-              equipment and step into the UAE's most profitable opportunity. Don’t miss out secure
-              yours now
+              The crypto revolution waits for no one. Equip yourself with
+              cutting edge mining equipment and step into the UAE's most
+              profitable opportunity. Don’t miss out secure yours now
             </h4>
             {/* <h4 className="text-base font-light text-white leading-6 tracking-wider">
               With expert support, your success is just a step away. Shop now

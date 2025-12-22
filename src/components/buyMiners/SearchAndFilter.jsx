@@ -9,29 +9,25 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import {
   resetAll,
-  setCategoryOptions,
   setCryptoCurrencyOption,
   setKeyWord,
   setManufacturerOptions,
+  setProductCategory,
   setSortBy,
 } from "../../slices/userProductSearchSlice";
 import FormSelect from "../FormSelect";
 
-export default function SearchAndFilter({ setShowFilter, refetch }) {
+export default function SearchAndFilter({ setShowFilter }) {
   const sortOptions = ["Newest", "Oldest"];
 
   const dispatch = useDispatch();
   const {
     manufacturerOptions,
-    categoryOptions,
     cryptoCurrencyOption,
     keyWord,
     sortby,
+    productCategory,
   } = useSelector((state) => state.userProductSearch);
-
-  useEffect(() => {
-    refetch();
-  }, [manufacturerOptions, cryptoCurrencyOption, keyWord, sortby]);
 
   return (
     <div className="lg:w-60 w-full rounded-xl px-2 py-5 flex flex-col gap-5 text-white">
@@ -70,8 +66,8 @@ export default function SearchAndFilter({ setShowFilter, refetch }) {
       <FormSelect
         title={"Category"}
         list={categoryDropdowns}
-        value={categoryOptions}
-        onchange={(e) => dispatch(setCategoryOptions(e.target.value))}
+        value={productCategory}
+        onchange={(e) => dispatch(setProductCategory(e.target.value))}
       />
       <FormSelect
         title={"Manufacturer"}

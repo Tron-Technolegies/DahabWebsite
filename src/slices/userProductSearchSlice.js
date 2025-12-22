@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   manufacturerOptions: "ALL",
   cryptoCurrencyOption: "ALL",
-  categoryOptions: "ALL",
+  productCategory: "ALL",
   keyWord: "",
   sortby: "Newest",
 };
@@ -21,8 +21,8 @@ const userProductSearch = createSlice({
     setCryptoCurrencyOption: (state, { payload }) => {
       state.cryptoCurrencyOption = payload;
     },
-    setCategoryOptions: (state, { payload }) => {
-      state.categoryOptions = payload;
+    setProductCategory: (state, { payload }) => {
+      state.productCategory = payload;
     },
     setSortBy: (state, { payload }) => {
       state.sortby = payload;
@@ -31,8 +31,8 @@ const userProductSearch = createSlice({
       state.keyWord = "";
       state.manufacturerOptions = "ALL";
       state.cryptoCurrencyOption = "ALL";
-      state.categoryOptions = "ALL";
       state.sortby = "Newest";
+      state.productCategory = "ALL";
     },
   },
 });
@@ -42,7 +42,7 @@ export const {
   setCryptoCurrencyOption,
   setKeyWord,
   setManufacturerOptions,
-  setCategoryOptions,
   setSortBy,
   resetAll,
+  setProductCategory,
 } = userProductSearch.actions;
