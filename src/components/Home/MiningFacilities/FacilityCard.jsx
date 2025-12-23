@@ -25,9 +25,9 @@ export default function FacilityCard({ title, content, image }) {
       }}
     >
       <div>
-        <p className="text-2xl gradient-heading xl:text-left text-center">
+        <h3 className="text-2xl gradient-heading xl:text-left text-center">
           {title}
-        </p>
+        </h3>
         <p className="text-white text-sm xl:text-left text-center">{content}</p>
       </div>
       <img

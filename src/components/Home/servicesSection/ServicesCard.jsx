@@ -38,7 +38,10 @@ export default function ServicesCard({
         <p className="text-[#0194FE] text-center  ">{title.toUpperCase()}</p>
       </div>
       <div>
-        <p className="text-sm leading-6 text-justify">{content}</p>
+        <p
+          className="text-sm leading-6 text-justify"
+          dangerouslySetInnerHTML={{ __html: content }}
+        ></p>
         {list && (
           <ul className="ms-5">
             {list.map((x, index) => (

@@ -44,16 +44,15 @@ export default function HomePage() {
       <Helmet>
         <link rel="canonical" href={fullUrl || "https://dahabminers.com/"} />
         <title>
-          Crypto Mining in UAE-Bitcoin Machines Abu Dhabi-Dahab Miners
+          Crypto Mining in UAE | Bitcoin Mining in Dubai – Dahab Miners
         </title>
         <meta
           name="description"
-          content="Dahab Miners Retail is one of the leading bitcoin mining companies in Dubai. We offer
-cost-effective crypto mining and hosting solutions for your miners in UAE."
+          content="Crypto mining in UAE made easy. Buy Bitcoin mining machines, host miners in Dubai & Ethiopia, and get expert ASIC repair support with Dahab Miners"
         />
         <meta
           name="keywords"
-          content="Bitcoin Mining in Dubai, Bitcoin Mining Machines in Dubai, Bitcoin mining agency in uae, crypto mining company in uae"
+          content="Bitcoin Mining in Dubai, Bitcoin Mining Machines in Dubai, Crypto mining in UAE, Crypto mining company in UAE, Crypto Mining Solutions in UAE, ASIC miner hosting services in UAE, Bitcoin mining in Ethiopia"
         />
       </Helmet>
       <LandingSection />

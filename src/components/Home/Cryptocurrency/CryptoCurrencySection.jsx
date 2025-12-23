@@ -30,9 +30,11 @@ export default function CryptoCurrencySection() {
           </h3>
         </div>
         <p className="text-sm font-medium text-white leading-7 max-w-[500px]">
-          From buying top tier mining machines to hosting them in secure
-          facilities and ensuring seamless repairs, we cover every step of your
-          crypto mining needs. Start mining smarter with us today.
+          From buying top-tier Bitcoin mining machines to hosting them in secure
+          facilities and ensuring seamless repairs, we deliver end-to-end crypto
+          mining solutions. Whether you’re starting out or scaling operations,
+          Dahab Miners helps you mine smarter with reliable infrastructure and
+          expert support.
         </p>
         <Link
           to={"/buy-bitcoin-miners-uae"}

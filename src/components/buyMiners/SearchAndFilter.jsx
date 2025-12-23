@@ -33,7 +33,7 @@ export default function SearchAndFilter({ setShowFilter }) {
     <div className="lg:w-60 w-full rounded-xl px-2 py-5 flex flex-col gap-5 text-white">
       <div className="w-full flex justify-between items-center mb-10">
         <div className="flex items-center gap-5 justify-end">
-          <h1 className="text-lg font-medium">Filter</h1>
+          <p className="text-lg font-medium">Filter</p>
         </div>
 
         <button

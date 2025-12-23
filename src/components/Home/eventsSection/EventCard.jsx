@@ -32,9 +32,9 @@ export default function EventCard({ img, date, location, title, slug }) {
 
       {/* Title and Button */}
       <div className="flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center w-full">
-        <h3 className="text-white text-base sm:text-lg font-semibold tracking-wide leading-tight flex-1">
+        <h4 className="text-white text-base sm:text-lg font-semibold tracking-wide leading-tight flex-1">
           {title.toUpperCase()}
-        </h3>
+        </h4>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">

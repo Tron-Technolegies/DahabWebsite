@@ -108,7 +108,7 @@ export default function ProductCategorySection() {
         <h4 className="gradient-heading md:text-4xl text-3xl font-semibold py-5">
           Product Categories
         </h4>
-        <p className="text-left text-sm ">
+        <p className="text-center text-sm ">
           Explore our range of crypto mining solutions, designed to suit every
           miner from beginners to blockchain pros. At Dahab Crypto Mining, we
           combine performance, reliability, and innovation to help you mine

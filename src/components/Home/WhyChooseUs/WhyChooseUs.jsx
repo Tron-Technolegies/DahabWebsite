@@ -67,12 +67,14 @@ export default function WhyChooseUs() {
 
       {/* Right: Text Content */}
       <div className="flex flex-col md:items-start items-center gap-5 text-center md:text-left max-w-[350px] z-[1]">
-        <h4 className="text-2xl md:text-3xl font-semibold gradient-heading">
+        <h3 className="text-2xl md:text-3xl font-semibold gradient-heading">
           Why DAHAB Miners Is Your Trusted Mining Partner
-        </h4>
-        <p className="text-sm text-white w-[250px] text-start">
-          Purpose built solutions to help you succeed in the world of crypto
-          mining.
+        </h3>
+        <p className="text-sm text-white w-[400px] text-start">
+          Dahab Miners provides end-to-end crypto mining solutions designed
+          around performance and uptime. With hands-on operational experience
+          and purpose-built systems, we support miners with stable
+          infrastructure, responsive support, and optimized mining operations.
         </p>
         <button
           className="btn-bg px-5 py-2 rounded-lg text-white"

@@ -81,14 +81,13 @@ export default function EventSection() {
       variants={sectionVariants}
       className="main-bg px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex flex-col gap-5 items-center"
     >
-      <h4 className="gradient-heading md:text-4xl text-3xl font-semibold pb-2">
-        Events & Celebrations
-      </h4>
-      <p className="text-sm text-start max-w-[650px]">
-        At DahabMiners, we believe in more than just blockchain and hash rates
-        we believe in community, innovation, and celebrating milestones
-        together. From major achievements to community driven initiatives,
-        here's how we keep the energy high and the crypto vibes strong.
+      <h3 className="gradient-heading md:text-4xl text-3xl font-semibold pb-2">
+        Industry Events & Community
+      </h3>
+      <p className="text-sm text-center max-w-[650px]">
+        Our participation in industry events reflects our active role in the
+        global Bitcoin mining ecosystem, connecting with miners, infrastructure
+        partners, and industry stakeholders across key mining regions.
       </p>
 
       {/* Mobile: Show scroll hint */}

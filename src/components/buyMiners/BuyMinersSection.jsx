@@ -42,7 +42,7 @@ export default function BuyMinersSection() {
     <div className="bg-[#000618] px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 z-[1]">
       <div className="h-24 lg:h-40 flex justify-center items-center">
         <h1 className="buy-miners-heading text-2xl pb-5 lg:text-[40px] font-semibold">
-          Shop Best Miners
+          Buy Bitcoin Mining Machines in UAE
         </h1>
       </div>
       <div className="flex lg:flex-row flex-col gap-2">
@@ -67,9 +67,9 @@ export default function BuyMinersSection() {
       )}
 
       <div className="">
-        <h1 className="text-2xl lg:text-4xl font-semibold text-[#1ECBAF] text-center">
-          Top Rated Products
-        </h1>
+        <h2 className="text-2xl lg:text-4xl font-semibold text-[#1ECBAF] text-center">
+          Top Rated Mining Machines
+        </h2>
         {featuredLoading ? (
           <Loading />
         ) : (

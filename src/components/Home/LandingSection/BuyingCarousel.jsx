@@ -33,7 +33,7 @@ export default function BuyingCarousel({ setItem, item }) {
                 />
               </div>
             </div>
-            <h4 className="md:text-5xl text-3xl md:leading-[60px] leading-10 inline-block font-semibold gradient-heading pt-5">
+            <h1 className="md:text-5xl text-3xl md:leading-[60px] leading-10 inline-block font-semibold gradient-heading pt-5">
               Take Control of Your{" "}
               <span className="relative gradient-heading">
                 Future{" "}
@@ -45,19 +45,19 @@ export default function BuyingCarousel({ setItem, item }) {
                   decoding="async"
                 />
               </span>{" "}
-              Own a Crypto Mining Machine Today
-            </h4>
+              With Crypto Mining in the UAE
+            </h1>
           </div>
           <div>
             <h2 className="text-base font-light text-white leading-6 tracking-wider">
               <a href="https://www.dahabminers.com/buy-bitcoin-miners-uae/">
-                Crypto Mining in UAE
+                Crypto Mining in UAE & Bitcoin Mining in Dubai
               </a>
             </h2>
             <h4 className="text-base font-light text-white leading-6 tracking-wider text-left">
-              The crypto revolution waits for no one. Equip yourself with
-              cutting edge mining equipment and step into the UAE's most
-              profitable opportunity. Don’t miss out secure yours now
+              Buy high-performance ASIC miners in the UAE with professional
+              hosting in Abu Dhabi and Ethiopia, backed by expert repair and
+              operational support.
             </h4>
             {/* <h4 className="text-base font-light text-white leading-6 tracking-wider">
               With expert support, your success is just a step away. Shop now

@@ -41,7 +41,7 @@ export default function FounderCard({
             className="rounded-full w-24 h-24 object-cover border-2 border-[#4D8390]"
           />
           <div className="flex flex-col items-center">
-            <p className="font-semibold">{name}</p>
+            <h3 className="font-semibold">{name}</h3>
             <p className="text-sm">{role}</p>
           </div>
           <p className="text-start text-sm">{about}</p>

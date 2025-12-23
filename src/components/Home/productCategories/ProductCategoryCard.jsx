@@ -36,7 +36,7 @@ export default function ProductCategoryCard({ img, title, content }) {
         <p className="text-center text-lg font-semibold">{title}</p>
       </div>
 
-      <p className="text-sm tracking-wider leading-5 text-left font-light flex-1 px-2 overflow-visible ">
+      <p className="text-sm tracking-wider leading-5 text-justify font-light flex-1 px-2 overflow-visible ">
         {content}
       </p>
 

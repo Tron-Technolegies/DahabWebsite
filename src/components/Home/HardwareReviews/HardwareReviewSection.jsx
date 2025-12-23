@@ -25,9 +25,9 @@ export default function HardwareReviewSection() {
         className="grid grid-cols-1 lg:grid-cols-3 gap-7"
       >
         <div className="text-white flex flex-col gap-5 lg:col-span-2 lg:self-center">
-          <h4 className="text-[40px] font-semibold gradient-heading max-w-[680px]">
-            Why DAHAB Miners is Your Ideal Crypto Mining Partner
-          </h4>
+          <h3 className="text-[40px] font-semibold gradient-heading max-w-[680px]">
+            Why Choose Dahab Miners for Crypto Mining
+          </h3>
           <p className="text-5xl font-medium">4.9/5</p>
           <div className="flex gap-3 items-center">
             <div className="flex gap-1 text-amber-500">
@@ -37,9 +37,9 @@ export default function HardwareReviewSection() {
               <FaStar />
               <FaStar />
             </div>
-            <h3 className="text-lg font-medium">
+            <p className="text-lg font-medium">
               Trusted by 100+ Happy Customers
-            </h3>
+            </p>
           </div>
         </div>
         <HardwareReviewCard

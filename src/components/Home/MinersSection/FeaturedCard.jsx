@@ -37,7 +37,7 @@ export default function FeaturedCard({
         />
       </div>
       <div className="max-w-[488px] flex flex-col gap-7">
-        <h4 className="text-2xl font-semibold text-[#1ECBAF]">{name}</h4>
+        <h3 className="text-2xl font-semibold text-[#1ECBAF]">{name}</h3>
         <p className="text-base font-normal text-[#D9EFFF]">{desc}</p>
         <div className="flex justify-between">
           <div className="flex flex-col gap-1">

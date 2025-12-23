@@ -12,15 +12,15 @@ export default function PerformanceMetrics() {
   };
   return (
     <section className="main-bg px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex flex-col items-center gap-10 w-full">
-      <motion.h4
+      <motion.h3
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }} // Triggers when 20% of the section is visible
         variants={sectionVariants}
         className="text-center text-5xl pb-4 font-semibold gradient-heading"
       >
-        Dive into our performance Metrics
-      </motion.h4>
+        Performance Metrics & Operational Scale
+      </motion.h3>
       <motion.div
         initial="hidden"
         whileInView="visible"

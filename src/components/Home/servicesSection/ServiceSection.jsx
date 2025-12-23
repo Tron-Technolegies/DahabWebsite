@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { IoHardwareChipOutline, IoServerOutline } from "react-icons/io5";
 import { BsTools } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -20,19 +21,18 @@ const data = [
     id: 2,
     img: <IoServerOutline />,
     title: "Hosting Solutions",
-    content:
-      "At Dahab Miners, we offer versatile and scalable hosting solutions designed to meet the needs of miners of every scale — whether operating on air-cooled, immersion, or hydro setups. Our advanced hosting sites in the UAE and Ethiopia are engineered for efficiency and reliability, ensuring your miners operate at peak performance with:",
+    content: `<p>At Dahab Miners, we offer versatile and scalable crypto mining hosting solutions designed to support miners of every scale - whether operating air-cooled, immersion, or hydro setups. Our secure hosting facilities span multiple strategic regions, including the <Link to={"/"}>UAE</Link>, Ethiopia, Russia, Tanzania, and Paraguay, and are engineered for operational efficiency, stability, and long-term reliability. Our hosting services include: </p>`,
     list: [
-      "Professional installation and setup",
+      "Professional installation and miner setup",
       "24/7 monitoring and performance management",
       "Preventive maintenance and rapid response support",
-      "Uptime guarantees backed by strong SLAs",
+      "Strong uptime commitments backed by clear SLAs",
     ],
     content2:
-      "Whether you’re deploying a hydro container, running immersion tanks, or managing traditional air-cooled units, our infrastructure and team are ready to handle it all seamlessly",
+      "Whether you’re deploying hydro containers, running immersion tanks, or managing traditional air-cooled miners, our infrastructure and experienced operations team are equipped to manage your mining operations seamlessly across regions.",
 
     content3:
-      "Hydro, Immersion, or Air — hosted to perfection, powered by Dahab.",
+      "Hydro, immersion, or air - hosted to perfection, powered by Dahab.",
   },
   {
     id: 3,
@@ -84,9 +84,9 @@ export default function ServiceSection() {
       className="main-bg px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex flex-col gap-5 items-center"
     >
       <p className="text-[#1ECBAF] text-xs tracking-[5px]">OUR SERVICES</p>
-      <h4 className="gradient-heading md:text-4xl text-3xl font-semibold pb-5">
-        Unlock Our Mining Solutions
-      </h4>
+      <h2 className="gradient-heading md:text-4xl text-3xl font-semibold pb-5">
+        Complete Crypto Mining Solutions in UAE
+      </h2>
       <div className="grid grid-cols-1 gap-7">
         {data.map((item) => (
           <ServicesCard

@@ -80,9 +80,9 @@ export default function Testimonials() {
         <h4 className="text-base font-light tracking-widest text-btnGreen text-center">
           TESTIMONIALS
         </h4>
-        <h4 className="text-[40px] font-semibold gradient-heading text-center">
-          What our clients say about us
-        </h4>
+        <h3 className="text-[40px] font-semibold gradient-heading text-center">
+          What our clients say about Dahab Miners
+        </h3>
       </motion.div>
 
       <Slider {...settings} className="my-10">
