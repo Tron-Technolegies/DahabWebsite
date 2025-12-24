@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
       {/* Right: Text Content */}
       <div className="flex flex-col md:items-start items-center gap-5 text-center md:text-left max-w-[350px] z-[1]">
         <h3 className="text-2xl md:text-3xl font-semibold gradient-heading">
-          Why DAHAB Miners Is Your Trusted Mining Partner
+          Why Dahab Miners Is Your Trusted Crypto Mining Partner
         </h3>
         <p className="text-sm text-white w-[400px] text-start">
           Dahab Miners provides end-to-end crypto mining solutions designed

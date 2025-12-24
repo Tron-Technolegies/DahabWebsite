@@ -127,7 +127,7 @@ export default function Footer() {
             variants={itemVariants}
             className="bg-[#030815]/50 rounded-xl p-6 shadow-lg"
           >
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <div className="flex flex-col gap-4 text-sm font-medium">
               <a
                 href="https://maps.app.goo.gl/eLqPGSFbuweek7788?g_st=ipc"

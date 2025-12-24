@@ -25,7 +25,7 @@ export default function Miners() {
           Miners
         </p>
         <h2 className="md:text-[38px] text-3xl font-semibold gradient-heading z-[5] py-3">
-          Crypto Mining Machines for Sale in UAE
+          Start Bitcoin Mining in UAE & Ethiopia with Dahab Miners
         </h2>
         <p className="mt-5 mb-7 max-w-[500px] mx-auto">
           {/* <a href="https://www.dahabminers.com/buy-bitcoin-miners-uae">Buy Bitcoin Machines in Dubai.</a>{" "} */}

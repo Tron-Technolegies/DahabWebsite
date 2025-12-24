@@ -25,9 +25,9 @@ export default function CryptoCurrencySection() {
           <h4 className="text-[40px] pb-3 font-semibold gradient-heading z-[2]">
             Empower Your Mining Journey with DAHAB Miners
           </h4>
-          <h3 className="text-base font-semibold text-homeBgGradient">
+          <p className="text-base font-semibold text-homeBgGradient">
             <a href="https://dahabminers.com/">Crypto Mining in UAE</a>
-          </h3>
+          </p>
         </div>
         <p className="text-sm font-medium text-white leading-7 max-w-[500px]">
           From buying top-tier Bitcoin mining machines to hosting them in secure

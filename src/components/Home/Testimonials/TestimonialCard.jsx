@@ -25,12 +25,12 @@ export default function TestimonialCard({ name, content, image }) {
         textAlign: "left", //  Enforces left alignment directly via inline style
       }}
     >
-      <h4 className="flex items-center gap-2 text-lg font-semibold">
+      <p className="flex items-center gap-2 text-lg font-semibold">
         {name}
         <span className="text-btnGreen bg-[#1ECBAF33] rounded-full p-1">
           <TiTick />
         </span>
-      </h4>
+      </p>
 
       {/* <img
         src={image}

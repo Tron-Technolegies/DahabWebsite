@@ -54,11 +54,11 @@ export default function BuyingCarousel({ setItem, item }) {
                 Crypto Mining in UAE & Bitcoin Mining in Dubai
               </a>
             </h2>
-            <h4 className="text-base font-light text-white leading-6 tracking-wider text-left">
+            <p className="text-base font-light text-white leading-6 tracking-wider text-left">
               Buy high-performance ASIC miners in the UAE with professional
               hosting in Abu Dhabi and Ethiopia, backed by expert repair and
               operational support.
-            </h4>
+            </p>
             {/* <h4 className="text-base font-light text-white leading-6 tracking-wider">
               With expert support, your success is just a step away. Shop now
             </h4> */}
