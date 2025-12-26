@@ -5,11 +5,11 @@ export default function BitcoinConsulting() {
   return (
     <section className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex flex-col items-center gap-5">
       {/* Heading and Intro */}
-      <div className="w-full max-w-[800px] text-left">
+      <div className="w-full max-w-[800px] text-center">
         <h5 className="gradient-heading text-[40px] font-semibold">
           Expert Guidance for Your Mining Success
         </h5>
-        <p className="text-white mt-2 max-w-[600px]">
+        <p className="text-white mt-2 max-w-[600px] text-center mx-auto">
           Get free consultation, expert purchasing advice, miner configuration
           assistance, and tailored investment strategies—all at no extra cost.
         </p>
@@ -44,8 +44,7 @@ export default function BitcoinConsulting() {
             <div key={index} className="flex gap-4 items-start">
               <img src={icon} alt={title} className="w-5 mt-1" />
               <p>
-                {title} -{" "}
-                <span className="font-extralight">{detail}</span>
+                {title} - <span className="font-extralight">{detail}</span>
               </p>
             </div>
           ))}

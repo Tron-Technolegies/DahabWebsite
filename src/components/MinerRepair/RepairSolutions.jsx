@@ -22,10 +22,10 @@ export default function RepairSolutions() {
         <p className="text-base font-semibold text-[#1ECBAF] mt-10">
           Elevate Your ASIC Repair Expertise Today
         </p>
-        <h1 className="text-3xl lg:text-4xl pb-5 font-semibold gradient-heading shadow-[#1ECBAF] max-w-[768px] drop-shadow-2xl">
+        <h3 className="text-3xl lg:text-4xl pb-5 font-semibold gradient-heading shadow-[#1ECBAF] max-w-[768px] drop-shadow-2xl">
           {" "}
           Maximize Your Mining Potential with Expert ASIC Repairs
-        </h1>
+        </h3>
         <img
           className="object-cover rounded-md lg:max-w-[600px]"
           src="/7-lg.webp"

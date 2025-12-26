@@ -21,9 +21,9 @@ export default function AbudhabiConsulting() {
       className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10"
     >
       <div className="flex flex-col gap-4 items-center">
-        <h5 className="text-3xl text-center font-semibold gradient-heading">
+        <h2 className="text-3xl text-center font-semibold gradient-heading">
           Expert Guidance for Your Mining Success
-        </h5>
+        </h2>
         <p className="text-center">
           Get free consultation, expert purchasing advice, miner configuration
           assistance, and tailored investment strategies all at no extra cost.

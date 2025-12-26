@@ -6,9 +6,9 @@ import { BsLightningCharge } from "react-icons/bs";
 export default function GraphSection() {
   return (
     <section className="main-bg px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10">
-      <h1 className="gradient-heading text-3xl lg:text-4xl font-semibold py-5 text-center z-[1]">
-        Why Choose DAHAB Hosting
-      </h1>
+      <h2 className="gradient-heading text-3xl lg:text-4xl font-semibold py-5 text-center z-[1]">
+        Why Choose Dahab Miners for Mining Hosting
+      </h2>
       <div className="flex lg:flex-row flex-col items-center lg:items-start gap-10 justify-between my-10">
         <div className="flex text-white flex-col gap-5 items-center max-w-[360px]">
           <div className="w-12 h-12 rounded-full btn-bg flex justify-center items-center text-2xl">

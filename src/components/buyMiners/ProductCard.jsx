@@ -16,7 +16,7 @@ export default function ProductCard({ bgwhite, img, name, price, slug }) {
           src={img}
           alt={"Buy Bitcoin Miners UAE"}
         />
-        <h1 className="text-xl text-center font-medium">{name}</h1>
+        <h3 className="text-xl text-center font-medium">{name}</h3>
         <p className="text-xl font-semibold text-[#F79009]">{`AED ${price}`}</p>
       </div>
 

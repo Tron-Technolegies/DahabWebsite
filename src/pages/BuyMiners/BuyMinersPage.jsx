@@ -34,7 +34,8 @@ export default function BuyMinersPage() {
     mainEntity: {
       "@type": "Product",
       name: "Bitcoin Mining Machines",
-      description: "High-performance Bitcoin mining hardware available in the UAE.",
+      description:
+        "High-performance Bitcoin mining hardware available in the UAE.",
       brand: {
         "@type": "Brand",
         name: "Dahab Miners",
@@ -72,7 +73,9 @@ export default function BuyMinersPage() {
     <div>
       <Helmet>
         <link rel="canonical" href={fullUrl || "https://dahabminers.com/"} />
-        <title>Buy Bitcoin Miners in UAE | Bitcoin mining equipment Abu Dhabi</title>
+        <title>
+          Buy Bitcoin Miners in UAE | Bitcoin mining equipment Abu Dhabi
+        </title>
         <meta
           name="description"
           content="Find and purchase the top Bitcoin Mining Machines in Dubai, UAE, such as the Bitmain Antminer AL1 Pro, DragonBall Miner A11, and IceRiver AL3. 
@@ -80,9 +83,11 @@ export default function BuyMinersPage() {
         />
         <meta
           name="keywords"
-          content="Buy Bitcoin Miners UAE, Crypto mining hardware Dubai, Bitcoin mining equipment Abu Dhabi, Purchase crypto miners UAE"
+          content="Buy Bitcoin mining machines in UAE, Bitcoin miners for sale in UAE, ASIC miners for sale in Dubai, Buy ASIC mining machines UAE, Bitcoin mining hardware UAE, Crypto mining machines for sale UAE"
         />
-        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
       <BuyMinersSection />
     </div>

@@ -20,9 +20,9 @@ export default function EthiopiaSafetySection() {
     >
       <div className="lg:p-10 p-5 customborder flex lg:flex-row flex-col justify-between items-center gap-5">
         <div className="flex flex-col gap-5">
-          <h4 className="text-3xl gradient-heading font-semibold lg:text-start text-center">
+          <h2 className="text-3xl gradient-heading font-semibold lg:text-start text-center">
             Safety & Service of the Mining Farm in Ethiopia
-          </h4>
+          </h2>
           <p className="lg:text-start text-center">
             The security of your investment is our top priority. Our facility is
             safeguarded with Armed personnel at the gates and 24/7 on-site staff

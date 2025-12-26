@@ -20,9 +20,9 @@ export default function EthiopiaAdvantage2Section() {
       variants={sectionVariants}
       className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex flex-col items-center gap-10"
     >
-      <h4 className="text-3xl font-semibold gradient-heading text-center">
+      <h2 className="text-3xl font-semibold gradient-heading text-center">
         Ethiopia: A Prime Destination for Bitcoin Mining
-      </h4>
+      </h2>
 
       <div className="w-full lg:p-10 p-5 flex justify-between lg:flex-row flex-col items-center gap-5 customborder">
         <img

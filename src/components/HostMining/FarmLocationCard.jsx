@@ -46,7 +46,7 @@ export default function FarmLocationCard({
             Know More Details
           </button>
         </div>
-        <h5 className="text-[#07EAD3] text-2xl">{location}</h5>
+        <h3 className="text-[#07EAD3] text-2xl">{location}</h3>
       </div>
 
       <div className="flex flex-col gap-3">

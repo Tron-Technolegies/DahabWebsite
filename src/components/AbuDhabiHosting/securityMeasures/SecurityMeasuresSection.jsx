@@ -19,9 +19,9 @@ export default function SecurityMeasuresSection() {
       variants={sectionVariants}
       className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex flex-col gap-10 text-white"
     >
-      <h4 className="gradient-heading text-3xl font-semibold text-center">
-        Security Measures at Dahab Miners' Hosting Facilities
-      </h4>
+      <h2 className="gradient-heading text-3xl font-semibold text-center">
+        Security Measures at Dahab Miners’ Hosting Facilities
+      </h2>
 
       <div className="p-6 md:p-10 customborder flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-12">
         <div className="flex-1 flex flex-col gap-5">

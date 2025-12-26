@@ -22,9 +22,9 @@ export default function AboutLandingSection() {
           <p className="text-sm gradient-heading md:text-stat text-center">
             About us
           </p>
-          <h5 className="text-[#2295B7] text-2xl md:text-start text-center">
+          <h1 className="text-[#2295B7] text-2xl md:text-start text-center">
             Leading Crypto Mining Company in Abu Dhabi, UAE
-          </h5>
+          </h1>
           <p className="max-w-[600px] md:text-start text-start">
             With years of experience in the UAE, we’ve built a seamless mining
             ecosystem for our clients. From sourcing the most profitable mining

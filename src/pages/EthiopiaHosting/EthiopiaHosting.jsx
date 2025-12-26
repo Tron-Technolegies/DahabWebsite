@@ -20,21 +20,24 @@ export default function EthiopiaHosting() {
   return (
     <div>
       <Helmet>
-        <title>Bitcoin Mining Hosting Ethiopia | Dahab Miners Facility & Support</title>
+        <title>
+          Bitcoin Mining in Ethiopia | Low-Cost Hydropower & Hosting | Dahab
+          Miners
+        </title>
         <meta
           name="description"
-          content="Reliable, secure, and high-performance bitcoin mining hosting in Ethiopia with Dahab Miners. Host your miners in our professionally managed facility with optimized power, cooling, and 24/7 technical support."
+          content="Bitcoin mining in Ethiopia powered by low-cost hydropower. Secure facilities, ASIC hosting, 24/7 support, and high profitability with Dahab Miners."
         />
         <meta
           name="keywords"
-          content="ASIC Miner hosting in Ethiopia, 
-Crypto mining in Ethiopia, 
-Bitcoin mining in Ethiopia, 
-Host miners in Ethiopia"
+          content="Crypto mining in Ethiopia, Bitcoin mining in Ethiopia, Crypto mining farms Ethiopia, ASIC miners Ethiopia, Host miners in Ethiopia, ASIC Miner hosting in Ethiopia, bitcoin mining hosting ethiopia"
         />
         <link
           rel="canonical"
-          href={fullUrl || "https://dahabminers.com/host-miners/bitcoin-mining-hosting-ethiopia"}
+          href={
+            fullUrl ||
+            "https://dahabminers.com/host-miners/bitcoin-mining-hosting-ethiopia"
+          }
         />
       </Helmet>
 

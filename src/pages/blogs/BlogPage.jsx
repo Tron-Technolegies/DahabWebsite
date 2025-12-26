@@ -17,12 +17,15 @@ export default function BlogPage() {
           rel="canonical"
           href={fullUrl || "https://dahabminers.com/blogs"}
         />
-        <title>Crypto Mining Insights and Tips | Dahab Miners Blog</title>
+        <title>Bitcoin & Crypto Mining Blogs | Dahab Miners</title>
         <meta
           name="description"
-          content="Stay updated with the latest news, tips, and insights on crypto mining at Dahab Miners' blog. Learn how to optimize your mining operations today"
+          content="Read expert articles on Bitcoin mining, ASIC hardware, hosting, repairs, mining economics, and blockchain infrastructure from Dahab Miners."
         />
-        <meta name="keywords" content="Buy Bitcoin Miners in Abu Dhabi" />
+        <meta
+          name="keywords"
+          content="bitcoin mining blog, crypto mining blog, ASIC miner guides, bitcoin mining insights, crypto mining insights, crypto mining UAE, bitcoin mining Ethiopia"
+        />
       </Helmet>
 
       <BlogList />

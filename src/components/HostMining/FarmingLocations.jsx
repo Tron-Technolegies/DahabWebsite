@@ -25,12 +25,12 @@ export default function FarmingLocations() {
       className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 flex flex-col items-center"
     >
       <div className="max-w-[600px] text-center mb-8">
-        <h4 className="gradient-heading text-[40px] font-semibold">
+        <h2 className="gradient-heading text-[40px] font-semibold">
           Bitcoin Mining Farm Locations
-        </h4>
-        <p className="text-sm text-white mt-2 text-start">
-          A service that allows our customers to concentrate on the mining itself
-          while outsourcing the operation of the infrastructure to us.
+        </h2>
+        <p className="text-sm text-white mt-2 text-center">
+          A service that allows our customers to concentrate on the mining
+          itself while outsourcing the operation of the infrastructure to us.
         </p>
       </div>
 

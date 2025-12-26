@@ -68,7 +68,7 @@ export default function BuyMinersSection() {
 
       <div className="">
         <h2 className="text-2xl lg:text-4xl font-semibold text-[#1ECBAF] text-center">
-          Top Rated Mining Machines
+          Top Rated Bitcoin Mining Machines
         </h2>
         {featuredLoading ? (
           <Loading />

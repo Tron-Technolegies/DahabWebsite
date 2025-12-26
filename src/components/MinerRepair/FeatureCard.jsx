@@ -25,7 +25,7 @@ export default function FeatureCard({ title, content }) {
         borderStyle: "solid",
       }}
     >
-      <h1 className="text-2xl font-semibold text-[#1ECBAF]">{title}</h1>
+      <h3 className="text-2xl font-semibold text-[#1ECBAF]">{title}</h3>
       <p className="text-sm font-normal text-white leading-6 max-w-[317px] text-start">
         {content}
       </p>

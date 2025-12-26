@@ -19,6 +19,17 @@ export default function AboutUsPage() {
   return (
     <div>
       <Helmet>
+        <title>
+          About Dahab Miners | Leading Bitcoin & Crypto Mining Company UAE
+        </title>
+        <meta
+          name="description"
+          content="Dahab Miners is a leading crypto mining company in the UAE, providing ASIC miner sales, mining hosting, repairs, and infrastructure across Abu Dhabi and Ethiopia."
+        />
+        <meta
+          name="keywords"
+          content="Crypto mining company in UAE, Bitcoin mining company in Dubai, ASIC mining company UAE, Crypto mining infrastructure provider, Mining hosting company UAE, Dahab Miners Ethiopia mining farm"
+        />
         <link rel="canonical" href={fullUrl} />
       </Helmet>
       <AboutLandingSection />

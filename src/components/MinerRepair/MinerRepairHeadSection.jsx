@@ -16,17 +16,15 @@ export default function MinerRepairHeadSection({ scrollfunction }) {
           Expert Bitcoin ASIC Miner Repair Services
         </h1>
         <div className="flex flex-col gap-3">
-          <p className="text-base lg:text-lg font-normal leading-8 text-white text-start">
+          <p className="text-base lg:text-lg font-normal leading-8 text-white text-center">
             Get your miners back online fast and hassle free. Our certified
             technicians specialize in diagnosing and repairing ASIC miners,
-            ensuring maximum uptime and efficiency.
+            ensuring maximum uptime and efficiency. From minor fixes to full
+            scale refurbishments, we repair all major brands, including Bitmain,
+            Icerivers, Whatsminer, and Avalon. Fast turnaround. Zero
+            compromises.
           </p>
-          <p className="text-base lg:text-lg font-normal leading-8 text-white text-start">
-            From minor fixes to full scale refurbishments, we repair all major
-            brands, including Bitmain, Icerivers, Whatsminer, and Avalon. Fast
-            turnaround. Zero compromises.
-          </p>
-          <p className="text-base lg:text-lg font-normal leading-8 text-white text-start">
+          <p className="text-base lg:text-lg font-normal leading-8 text-white text-center">
             Trust the experts. Keep mining without interruptions.
           </p>
         </div>

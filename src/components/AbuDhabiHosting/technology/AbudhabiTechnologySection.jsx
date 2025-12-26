@@ -20,9 +20,9 @@ export default function AbudhabiTechnologySection() {
     >
       <div className="flex lg:flex-row flex-col-reverse justify-between gap-3 items-center p-10 customborder">
         <div className="max-w-[600px] flex flex-col lg:items-start items-center gap-5">
-          <h4 className="gradient-heading lg:text-left text-start text-3xl font-semibold">
+          <h2 className="gradient-heading lg:text-left text-start text-3xl font-semibold">
             Cutting-Edge Technology for Maximum Mining Efficiency
-          </h4>
+          </h2>
           <p className="lg:text-left text-start">
             At Dahab Miners, we leverage advanced infrastructure to ensure
             maximum uptime, efficiency, and security for your mining operations.
