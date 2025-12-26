@@ -22,9 +22,9 @@ export default function SolutionsSection() {
         <p className="text-base font-semibold text-[#1ECBAF] mt-10">
           Elevate Your ASIC Repair Expertise Today
         </p>
-        <h1 className="text-3xl lg:text-4xl pb-5 font-semibold gradient-heading shadow-[#1ECBAF] max-w-[968px] drop-shadow-2xl">
+        <h2 className="text-3xl lg:text-4xl pb-5 font-semibold gradient-heading shadow-[#1ECBAF] max-w-[968px] drop-shadow-2xl">
           Maximize Your Mining Potential with Expert ASIC Repair
-        </h1>
+        </h2>
         <p className="text-base font-medium text-white leading-6 max-w-[900px] mb-10">
           Ensure peak performance for your miners with our professional repair
           services. From diagnostics to full repairs, we keep your mining
