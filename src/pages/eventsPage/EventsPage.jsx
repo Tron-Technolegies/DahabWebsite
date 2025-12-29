@@ -23,7 +23,7 @@ export default function EventsPage() {
       <Helmet>
         <title>{data.metaTitle}</title>
         <meta name="description" content={data.metaDescription} />
-        <meta name="keyword" content={data.metaKeywords} />
+        <meta name="keywords" content={data.metaKeywords} />
         <link rel="canonical" href={fullUrl || "https://dahabminers.com/"} />
       </Helmet>
       <div className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10">
@@ -35,9 +35,9 @@ export default function EventsPage() {
         </Link>
         <div className="flex gap-10 md:flex-row flex-col items-center mt-10">
           <div className="md:w-1/3 w-full flex flex-col md:items-start items-center gap-2">
-            <p className="font-semibold md:text-2xl text-lg md:text-left text-center w-full">
+            <h1 className="font-semibold md:text-2xl text-lg md:text-left text-center w-full">
               {data.title}
-            </p>
+            </h1>
             <p className="flex gap-2 items-center md:text-left text-center">
               <CiLocationOn />
               <span>{data.location}</span>
