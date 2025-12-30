@@ -1,44 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://dahabminers.com/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-<url>
-  <loc>https://dahabminers.com/buy-bitcoin-miners-uae/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-<url>
-  <loc>https://dahabminers.com/host-miners/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-<url>
-  <loc>https://dahabminers.com/host-miners/bitcoin-mining-hosting-abu-dhabi/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-<url>
-  <loc>https://dahabminers.com/host-miners/bitcoin-mining-hosting-ethiopia/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-<url>
-  <loc>https://dahabminers.com/asic-miner-repair-dubai/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-<url>
-  <loc>https://dahabminers.com/blogs/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-<url>
-  <loc>https://dahabminers.com/about-us/</loc>
-  <lastmod>2024-10-11T04:45:50+00:00</lastmod>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dahabminers.com/</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/about-us</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/asic-miner-repair-dubai</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/ASIC-Miners-Explained</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/Factors-affecting-price-of-crypto-coins</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/ai-in-crypto-mining-2025</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/bitcoin-beats-silver-2024-crypto-mining-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/bitcoin-halving-impact-on-crypto-mining</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/bitcoin-mining-in-dubai</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/can-i-mine-bitcoin-at-home</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/comparing-miner-hosting-UAE-Ethiopia</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/crypto-mining-guide-for-beginners</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/crypto-mining-in-uae-dahab-miners-sponsors-goa-event</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/crypto-mining-mistakes-and-insights-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/crypto-mining-tax-ethiopia</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/cryptocurrency-and-the-dark-web-myths-vs-reality</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/do-you-need-coding-skills-to-mine-bitcoin-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/evolution-of-crypto-mining-from-cpu-to-asics</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/future-of-small-scale-crypto-mining</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/how-does-bitcoin-mining-help-the-network</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/how-to-host-low-cost-cryptominers-in-UAE</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/is-cryptomining-in-Ethiopia-worth</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/mining-pool-collaborative-opportunity-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/mining-with-gpu-pc-is-it-worth-the-effort</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/new-era-of-cryptocurrency-bitcoin-vs-gold</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/secure-mining-rig-against-hacks-malware-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/top-bitcoin-holders-2025</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/blogs/why-companies-governments-embrace-bitcoin-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/buy-bitcoin-miners-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/bitcoin-mena-conference-2025</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/bitcoin-summit-ethiopia-2025-dahab-miners-app-launch</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/bitplebs-summit-goa</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/dahab-engineering-bitcoin-mining-infrastructure-launch</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/dahab-miners-annual-team-meeting-abu-dhabi-2024</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/dahab-miners-bitcoin-oasis-2025-dubai</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/dahab-miners-bitcoin-summit-ethiopia-2024</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/hashsouq-bitcoin-ai-compute-event-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/mining_roundtable_conference_abu_dhabi_2024</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/events/tenx-tkm-alumni-meet-uae</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/host-miners</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/host-miners/bitcoin-mining-hosting-abu-dhabi</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/host-miners/bitcoin-mining-hosting-ethiopia</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/privacy_policy</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/services</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
+  <url>
+    <loc>https://dahabminers.com/terms_and_conditions</loc>
+    <lastmod>2025-12-30</lastmod>
+  </url>
 </urlset>
