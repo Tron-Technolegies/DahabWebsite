@@ -24,7 +24,7 @@ export default function SingleMinerPage() {
     if (product && product.productSchema) {
       const script = document.createElement("script");
       script.type = "application/ld+json";
-      script.innerHTML = JSON.stringify(product.productSchema);
+      script.innerHTML = product.productSchema;
       document.head.appendChild(script);
 
       return () => {
