@@ -23,6 +23,39 @@ import ServiceSection from "../../components/Home/servicesSection/ServiceSection
 import FoundersSection from "../../components/Home/founders/FoundersSection";
 import EventSection from "../../components/Home/eventsSection/EventSection";
 
+const schemaData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://dahabminers.com/#website",
+    name: "Dahab Miners",
+    url: "https://dahabminers.com",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://dahabminers.com/#organization",
+    name: "Dahab Miners",
+    url: "https://dahabminers.com",
+    logo: "https://dahabminers.com/home/logo.webp",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+971509669623",
+      contactType: "customer support",
+      areaServed: [
+        {
+          "@type": "Country",
+          name: "United Arab Emirates",
+        },
+        {
+          "@type": "Country",
+          name: "Ethiopia",
+        },
+      ],
+    },
+  },
+];
+
 export default function HomePage() {
   const { loading, btcData } = useGetBitCoinData();
   const dispatch = useDispatch();
@@ -54,6 +87,7 @@ export default function HomePage() {
           name="keywords"
           content="Bitcoin Mining in Dubai, Bitcoin Mining Machines in Dubai, Crypto mining in UAE, Crypto mining company in UAE, Crypto Mining Solutions in UAE, ASIC miner hosting services in UAE, Bitcoin mining in Ethiopia"
         />
+        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
       </Helmet>
       <LandingSection />
       <Miners />
