@@ -1,5 +1,11 @@
 import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -61,8 +67,16 @@ export default function Footer() {
                 icon={<FaFacebookF />}
               />
               <FooterLinks
-                link="https://www.linkedin.com/company/thedahab-miners"
+                link="https://ae.linkedin.com/company/dahabminers"
                 icon={<FaLinkedinIn />}
+              />
+              <FooterLinks
+                link="https://x.com/dahabminersuae"
+                icon={<FaXTwitter />}
+              />
+              <FooterLinks
+                link="https://www.youtube.com/@DahabMinersUAE"
+                icon={<FaYoutube />}
               />
             </div>
           </motion.div>
@@ -188,7 +202,8 @@ export default function Footer() {
           className="mt-12 pt-6 border-t border-white/10 text-center"
         >
           <p className="text-xs font-normal text-white/80">
-            © 2025 Dahab Miners. All Rights Reserved.
+            © {new Date().getFullYear()} Dahab Miners Electrical Contracting
+            LLC. All Rights Reserved.
           </p>
         </motion.div>
       </div>

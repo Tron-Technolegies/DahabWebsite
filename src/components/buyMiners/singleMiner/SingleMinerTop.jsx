@@ -3,6 +3,7 @@ import React from "react";
 import { GoCpu } from "react-icons/go";
 import { HiOutlineCube } from "react-icons/hi2";
 import { PiLightning } from "react-icons/pi";
+import { MdLocalShipping } from "react-icons/md";
 import { handleProductEnquiry } from "../../../utils/whatsapp";
 
 export default function SingleMinerTop({ product }) {
@@ -45,7 +46,13 @@ export default function SingleMinerTop({ product }) {
         <p className="text-base font-normal text-[#D9EFFF]">
           {product?.description}
         </p>
-        <p className="text-sm font-semibold text-[#F79009]">{`Price - AED ${product?.price}`}</p>
+        <div className="flex flex-col gap-1">
+          <p className="text-sm font-semibold text-[#F79009]">{`Price - AED ${product?.price}`}</p>
+          <p className="text-xs font-semibold text-[#F79009] flex gap-2 items-center">
+            <MdLocalShipping />
+            Free Shipping - No hidden charges
+          </p>
+        </div>
         <div className="flex justify-between">
           <div className="flex flex-col gap-1">
             <div className="w-10 h-10 bg-[#0194FE] rounded-full text-xl text-gray-200 flex justify-center items-center">

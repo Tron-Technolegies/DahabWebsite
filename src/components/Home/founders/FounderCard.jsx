@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 import FooterLinks from "../../FooterLinks";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export default function FounderCard({
   img,
@@ -10,6 +15,7 @@ export default function FounderCard({
   name,
   role,
   about,
+  what,
 }) {
   return (
     <motion.div
@@ -50,7 +56,8 @@ export default function FounderCard({
         <div className="flex gap-5 text-base font-normal text-white">
           <FooterLinks link={inst} icon={<FaInstagram />} />
           {/* <FooterLinks link={fb} icon={<FaFacebookF />} /> */}
-          <FooterLinks link={link} icon={<FaLinkedinIn />} />
+          {link && <FooterLinks link={link} icon={<FaLinkedinIn />} />}
+          {what && <FooterLinks link={what} icon={<FaWhatsapp />} />}
         </div>
       </div>
     </motion.div>

@@ -33,7 +33,7 @@ export default function BuyingCarousel({ setItem, item }) {
                 />
               </div>
             </div>
-            <h1 className="md:text-5xl text-3xl md:leading-[60px] leading-10 inline-block font-semibold gradient-heading pt-5">
+            <h2 className="md:text-5xl text-3xl md:leading-[60px] leading-10 inline-block font-semibold gradient-heading pt-5">
               Take Control of Your{" "}
               <span className="relative gradient-heading">
                 Future{" "}
@@ -46,14 +46,14 @@ export default function BuyingCarousel({ setItem, item }) {
                 />
               </span>{" "}
               With Crypto Mining in the UAE
-            </h1>
+            </h2>
           </div>
           <div>
-            <h2 className="text-base font-light text-white leading-6 tracking-wider">
+            <h1 className="text-base font-light text-white leading-6 tracking-wider">
               <a href="https://www.dahabminers.com/buy-bitcoin-miners-uae/">
                 Crypto Mining in UAE & Bitcoin Mining in Dubai
               </a>
-            </h2>
+            </h1>
             <p className="text-base font-light text-white leading-6 tracking-wider text-left">
               Buy high-performance ASIC miners in the UAE with professional
               hosting in Abu Dhabi and Ethiopia, backed by expert repair and

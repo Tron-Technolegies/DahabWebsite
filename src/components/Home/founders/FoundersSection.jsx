@@ -11,8 +11,8 @@ const data = [
     about:
       "Born and raised in the UAE, Rizwan has been active in the Bitcoin and crypto mining industry since 2020. With hands-on experience in mining operations, power strategy, and infrastructure, he has built streamlined solutions tailored to the UAE and emerging markets. Prior to Dahab Miners, he held leadership roles at firms including GreenGate and Tron Digital, contributing to energy-focused projects that shaped Dahab’s operational efficiency and sustainable growth.",
     fb: "#",
-    inst: "https://www.instagram.com/kf_rizwan?igsh=b2Y2bG95cGg1MXlw",
-    link: "https://www.linkedin.com/in/rizwan-kamar-ab117a172/",
+    inst: "https://www.instagram.com/rizwan_kamar_/",
+    link: "https://www.linkedin.com/in/rizwan-kamarudheen-ab117a172/",
     alt: "Rizwan Kamarudheen Co-Founder & Chief Executive Officer",
   },
   {
@@ -23,8 +23,8 @@ const data = [
     about:
       "Also born and raised in the UAE, Ahmed has been involved in the Bitcoin and crypto mining ecosystem alongside Rizwan since 2020. With a strong business background and experience across F&B, FMCG, and real estate, he brings a practical, execution-focused approach to scaling mining operations. His cross-industry leadership supports Dahab Miners’ strategic growth across the UAE, Ethiopia, and other mining regions.",
     fb: "#",
-    inst: "https://www.instagram.com/ah_rameez?igsh=eHE2cnpvcHhpMzEw",
-    link: "#",
+    inst: "https://www.instagram.com/ah_rameez/",
+    what: "https://wa.me/971557069222",
     alt: "Ahmed Rameez Co-Founder & Executive Director",
   },
   // {
@@ -76,6 +76,7 @@ export default function FoundersSection() {
             inst={item.inst}
             link={item.link}
             alt={item.alt}
+            what={item.what}
           />
         ))}
       </div>
