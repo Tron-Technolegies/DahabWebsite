@@ -63,3 +63,16 @@ export const useGetSingleProduct = ({ id }) => {
   });
   return { isLoading, isError, data };
 };
+
+export const useGetTopRatedProducts = () => {
+  const { isLoading, isError, data } = useQuery({
+    queryKey: ["top-rated"],
+    queryFn: async () => {
+      const { data } = await axios.get(`${BASE_URL}/users/product/toprated`, {
+        withCredentials: true,
+      });
+      return data;
+    },
+  });
+  return { isLoading, isError, data };
+};

@@ -61,6 +61,22 @@ export default function SingleMinerPage() {
       ) : (
         <>
           <SingleMinerTop product={product} />
+          {product.profitURLWord && (
+            <div className="my-3 relative">
+              <p className="text-xl">Profitability</p>
+              <iframe
+                src={`https://www.asicminervalue.com/widgets/miners/${product.profitURLWord}/profit?theme=dark`}
+                className="w-full my-3 h-[450px] md:h-[350px] "
+                frameBorder="0"
+                style={{ borderRadius: "8px" }}
+                allow="clipboard-write"
+                title="Antminer S21e XP Hydro Profitability"
+              ></iframe>
+              <div className="w-full h-[60px] bg-[#0e172b] right-0 absolute bottom-0"></div>
+              <div className="w-full bg-transparent h-[150px] absolute right-0 bottom-16"></div>
+              <div className="md:w-2/3 w-full bg-transparent h-[50px] absolute left-0 top-14"></div>
+            </div>
+          )}
           <SingleMinerDetailsTabs product={product} />
 
           {/*  FAQ Section below product tabs */}
