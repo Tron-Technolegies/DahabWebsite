@@ -36,7 +36,7 @@ export default function SingleMinerPage() {
   return loading ? (
     <Loading />
   ) : (
-    <div className="px-5 md:px-10 lg:px-[120px] xl:px-[180px] py-10 ">
+    <div className="px-2 md:px-10 lg:px-[120px] xl:px-[180px] py-10 ">
       <Helmet>
         <link rel="canonical" href={fullUrl || "https://dahabminers.com/"} />
         <title>{product?.metaTitle}</title>
