@@ -187,10 +187,10 @@ export default function Footer() {
               </div>
               <div
                 className="flex gap-3 items-center hover:text-[#0194FE] cursor-pointer transition-colors duration-300"
-                onClick={() => (window.location.href = "tel:+971509669623")}
+                onClick={() => (window.location.href = "tel:+971547717798")}
               >
                 <CiPhone className="text-xl flex-shrink-0" />
-                <p>+971509669623</p>
+                <p>+971547717798</p>
               </div>
             </div>
           </motion.div>
