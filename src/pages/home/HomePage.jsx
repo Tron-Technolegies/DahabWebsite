@@ -73,7 +73,7 @@ export default function HomePage() {
     }
   }, [loading]);
   return (
-    <div className="">
+    <>
       <Helmet>
         <link rel="canonical" href={fullUrl || "https://dahabminers.com/"} />
         <title>
@@ -113,6 +113,6 @@ export default function HomePage() {
       <FAQSection full={false} />
       <DiscussSection />
       {/* {<ContactForm />} */}
-    </div>
+    </>
   );
 }
