@@ -60,7 +60,7 @@ export default function HomePage() {
   const { loading, btcData } = useGetBitCoinData();
   const dispatch = useDispatch();
   const location = useLocation();
-  const fullUrl = window.location.origin + location.pathname + location.search;
+  const fullUrl = `https://dahabminers.com${location.pathname}${location.search !== '?' ? location.search : ''}`;
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -25,4 +25,4 @@ User-agent: *
 Disallow: 
 Crawl-delay: 5
 Disallow: /cgi-bin/
-Sitemap: https://dahabminers.com/sitemap.xml.
+Sitemap: https://dahabminers.com/sitemap.xml
