@@ -7,7 +7,10 @@ export default function BlogContent({ data }) {
         <h1 className="py-5 text-xl font-semibold text-center">
           {data && data.title}
         </h1>
-        <p dangerouslySetInnerHTML={{ __html: data && data.content }}></p>
+        <p
+          className="prose prose-lg max-w-none"
+          dangerouslySetInnerHTML={{ __html: data && data.content }}
+        ></p>
       </article>
     </div>
   );

@@ -20,17 +20,60 @@ export default function SingleMinerPage() {
   // Match the schema for this product based on its name
 
   // Inject schema dynamically into <head>
-  useEffect(() => {
-    if (product && product.productSchema) {
-      const script = document.createElement("script");
-      script.type = "application/ld+json";
-      script.innerHTML = product.productSchema;
-      document.head.appendChild(script);
+  // useEffect(() => {
+  //   if (product && product.productSchema) {
+  //     const script = document.createElement("script");
+  //     script.type = "application/ld+json";
+  //     script.innerHTML = product.productSchema;
+  //     document.head.appendChild(script);
 
-      return () => {
-        document.head.removeChild(script);
-      };
-    }
+  //     return () => {
+  //       document.head.removeChild(script);
+  //     };
+  //   }
+  // }, [product]);
+
+  useEffect(() => {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.productName,
+      description: product.description,
+      image: product.productImage,
+      brand: {
+        "@type": "Brand",
+        name: "Dahab Miners",
+      },
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "USD",
+        price: product.price ?? 0,
+        availability:
+          product.stock > 0
+            ? "https://schema.org/InStock"
+            : "https://schema.org/OutOfStock",
+        priceValidUntil: new Date(
+          new Date().setMonth(new Date().getMonth() + 1),
+        )
+          .toISOString()
+          .split("T")[0],
+        url: `https://dahabminers.com/products/${product.slug}`,
+      },
+    };
+
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "product-schema";
+    script.text = JSON.stringify(schema);
+
+    const existing = document.getElementById("product-schema");
+    if (existing) existing.remove();
+    document.head.appendChild(script);
+
+    return () => {
+      const s = document.getElementById("product-schema");
+      if (s) s.remove();
+    };
   }, [product]);
 
   return loading ? (
