@@ -37,9 +37,9 @@ export default function SingleMinerPage() {
     const schema = {
       "@context": "https://schema.org",
       "@type": "Product",
-      name: product.productName,
-      description: product.description,
-      image: product.productImage,
+      name: product?.productName,
+      description: product?.description,
+      image: product?.productImage,
       brand: {
         "@type": "Brand",
         name: "Dahab Miners",
@@ -47,9 +47,9 @@ export default function SingleMinerPage() {
       offers: {
         "@type": "Offer",
         priceCurrency: "USD",
-        price: product.price ?? 0,
+        price: product?.price ?? 0,
         availability:
-          product.stock > 0
+          product?.stock > 0
             ? "https://schema.org/InStock"
             : "https://schema.org/OutOfStock",
         priceValidUntil: new Date(
