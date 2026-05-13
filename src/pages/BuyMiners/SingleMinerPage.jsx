@@ -46,12 +46,9 @@ export default function SingleMinerPage() {
       },
       offers: {
         "@type": "Offer",
-        priceCurrency: "USD",
+        priceCurrency: "AED",
         price: product?.price ?? 0,
-        availability:
-          product?.stock > 0
-            ? "https://schema.org/InStock"
-            : "https://schema.org/OutOfStock",
+        availability: "https://schema.org/InStock",
         priceValidUntil: new Date(
           new Date().setMonth(new Date().getMonth() + 1),
         )
