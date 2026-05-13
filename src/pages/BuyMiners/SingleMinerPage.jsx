@@ -57,7 +57,7 @@ export default function SingleMinerPage() {
         )
           .toISOString()
           .split("T")[0],
-        url: `https://dahabminers.com/products/${product.slug}`,
+        url: `https://dahabminers.com/products/${product?.slug}`,
       },
     };
 
