@@ -79,6 +79,21 @@ export default function SmallHeader({ setSmallBar }) {
         <NavLink
           className={"border-b w-full py-2 border-[#9eede0]"}
           onClick={() => setSmallBar(false)}
+          to={"/services"}
+        >
+          Services
+        </NavLink>
+        <a
+          href="https://solar.dahabminers.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white border-b w-full py-2 border-[#9eede0]"
+        >
+          EV & Solar
+        </a>
+        <NavLink
+          className={"border-b w-full py-2 border-[#9eede0]"}
+          onClick={() => setSmallBar(false)}
           to={"/blogs"}
         >
           Blogs

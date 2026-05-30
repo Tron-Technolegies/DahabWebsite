@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 export default function Header() {
   const [showSmallBar, setShowSmallBar] = useState(false);
   const [isHover, setisHover] = useState(false);
+  const [services, setServices] = useState(false);
 
   return (
     // <header
@@ -16,7 +17,11 @@ export default function Header() {
     //   // style={{ backgroundImage: `url("/home/headerbg.jpg")` }}
     // >
     <header className="h-16 md:h-20 px-5 md:px-8 lg:px-12 xl:px-16 2xl:px-[120px] flex justify-between items-center bg-[#01081c] relative z-50 ">
-      <Link to={"/"} className="w-36 h-14 mt-5" onClick={() => window.scrollTo(0, 0)}>
+      <Link
+        to={"/"}
+        className="w-36 h-14 mt-5"
+        onClick={() => window.scrollTo(0, 0)}
+      >
         <img
           src="/home/logo.webp"
           fetchpriority="high"
@@ -29,20 +34,15 @@ export default function Header() {
         {/* <NavLink className={"text-white"} to={"/"}>
           Home
         </NavLink> */}
-        <a
-          href="https://mining.dahabminers.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white"
-        >
-          Cloud Mining
-        </a>
 
         <NavLink className={"text-white"} to={"/buy-bitcoin-miners-uae"}>
           Buy Miners
         </NavLink>
         <div className="relative">
-          <div className="text-white flex items-center gap-1" onClick={() => setisHover(!isHover)}>
+          <div
+            className="text-white flex items-center gap-1"
+            onClick={() => setisHover(!isHover)}
+          >
             Host Miners
             <span className="text-xl">
               <MdArrowDropDown />
@@ -78,9 +78,46 @@ export default function Header() {
         <NavLink className={"text-white"} to={"/asic-miner-repair-dubai"}>
           Miner Repair
         </NavLink>
-        <NavLink className={"text-white"} to={"/services"}>
-          Services
-        </NavLink>
+
+        <div className="relative">
+          <div
+            className="text-white flex items-center gap-1"
+            onClick={() => setServices(!services)}
+          >
+            Services
+            <span className="text-xl">
+              <MdArrowDropDown />
+            </span>
+          </div>
+          {services && (
+            <div className="absolute bg-[#000618] text-white shadow-lg rounded-md mt-2 w-40">
+              <NavLink
+                to={"/services"}
+                className="block px-4 py-2 hover:bg-[#202225]"
+                onClick={() => setServices(false)}
+                end
+              >
+                Our Services
+              </NavLink>
+              <a
+                href="https://mining.dahabminers.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white px-4 block"
+              >
+                Cloud Mining
+              </a>
+              <a
+                href="https://solar.dahabminers.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white block px-4 py-2"
+              >
+                EV & Solar
+              </a>
+            </div>
+          )}
+        </div>
         <NavLink className={"text-white"} to={"/blogs"}>
           Blogs
         </NavLink>
