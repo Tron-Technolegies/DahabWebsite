@@ -123,6 +123,12 @@ export default function Footer() {
               About Us
             </Link>
             <Link
+              to="/services"
+              className="hover:text-[#0194FE] transition-colors duration-300"
+            >
+              Services
+            </Link>
+            <Link
               to="/terms_and_conditions"
               className="hover:text-[#0194FE] transition-colors duration-300"
             >

@@ -10,6 +10,7 @@ export default function Header() {
   const [showSmallBar, setShowSmallBar] = useState(false);
   const [isHover, setisHover] = useState(false);
   const [services, setServices] = useState(false);
+  const [mining, setMining] = useState(false);
 
   return (
     // <header
@@ -31,33 +32,56 @@ export default function Header() {
         ></img>
       </Link>
       <nav className="lg:flex gap-5 xl:gap-10 text-sm xl:text-base font-medium hidden">
-        {/* <NavLink className={"text-white"} to={"/"}>
-          Home
-        </NavLink> */}
-
-        <NavLink className={"text-white"} to={"/buy-bitcoin-miners-uae"}>
-          Buy Miners
-        </NavLink>
+        <div className="relative">
+          <div
+            className="text-white flex items-center gap-1"
+            onClick={() => setMining(!mining)}
+          >
+            Equipment
+            <span className="text-xl">
+              <MdArrowDropDown />
+            </span>
+          </div>
+          {mining && (
+            <div className="absolute bg-[#000618] text-white shadow-lg rounded-md mt-2 w-40">
+              <NavLink
+                to={"/buy-bitcoin-miners-uae"}
+                className="block px-4 py-2 hover:bg-[#202225]"
+                onClick={() => setMining(false)}
+                end
+              >
+                Buy Miners
+              </NavLink>
+              <NavLink
+                to={"/asic-miner-repair-dubai"}
+                className="block px-4 py-2 hover:bg-[#202225]"
+                onClick={() => setMining(false)}
+              >
+                Miner Repair
+              </NavLink>
+            </div>
+          )}
+        </div>
         <div className="relative">
           <div
             className="text-white flex items-center gap-1"
             onClick={() => setisHover(!isHover)}
           >
-            Host Miners
+            Mine With Us
             <span className="text-xl">
               <MdArrowDropDown />
             </span>
           </div>
           {isHover && (
             <div className="absolute bg-[#000618] text-white shadow-lg rounded-md mt-2 w-40">
-              <NavLink
+              {/* <NavLink
                 to={"/host-miners"}
                 className="block px-4 py-2 hover:bg-[#202225]"
                 onClick={() => setisHover(false)}
                 end
               >
                 Hosting
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to={"/host-miners/bitcoin-mining-hosting-abu-dhabi"}
                 className="block px-4 py-2 hover:bg-[#202225]"
@@ -72,48 +96,56 @@ export default function Header() {
               >
                 Ethiopia
               </NavLink>
+              <a
+                href="https://mining.dahabminers.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white px-4 block py-2  hover:bg-[#202225]"
+              >
+                Cloud Mining
+              </a>
             </div>
           )}
         </div>
-        <NavLink className={"text-white"} to={"/asic-miner-repair-dubai"}>
-          Miner Repair
-        </NavLink>
 
         <div className="relative">
           <div
             className="text-white flex items-center gap-1"
             onClick={() => setServices(!services)}
           >
-            Services
+            Build
             <span className="text-xl">
               <MdArrowDropDown />
             </span>
           </div>
           {services && (
             <div className="absolute bg-[#000618] text-white shadow-lg rounded-md mt-2 w-40">
-              <NavLink
+              {/* <NavLink
                 to={"/services"}
                 className="block px-4 py-2 hover:bg-[#202225]"
                 onClick={() => setServices(false)}
                 end
               >
                 Our Services
-              </NavLink>
-              <a
-                href="https://mining.dahabminers.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white px-4 block"
-              >
-                Cloud Mining
-              </a>
+              </NavLink> */}
+
               <a
                 href="https://solar.dahabminers.com/"
                 target="_blank"
+                onClick={() => setServices(false)}
                 rel="noopener noreferrer"
                 className="text-white block px-4 py-2"
               >
                 EV & Solar
+              </a>
+              <a
+                href="https://engineering.dahabminers.com/"
+                target="_blank"
+                onClick={() => setServices(false)}
+                rel="noopener noreferrer"
+                className="text-white block px-4 py-2"
+              >
+                Engineering
               </a>
             </div>
           )}

@@ -91,6 +91,14 @@ export default function SmallHeader({ setSmallBar }) {
         >
           EV & Solar
         </a>
+        <a
+          href="https://engineering.dahabminers.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white border-b w-full py-2 border-[#9eede0]"
+        >
+          Engineering
+        </a>
         <NavLink
           className={"border-b w-full py-2 border-[#9eede0]"}
           onClick={() => setSmallBar(false)}
