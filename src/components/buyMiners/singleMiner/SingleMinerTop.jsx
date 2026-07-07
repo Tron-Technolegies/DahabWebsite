@@ -31,17 +31,29 @@ export default function SingleMinerTop({ product }) {
       }}
     >
       <div className="w-full max-w-[400px] h-auto md:max-w-[350px] overflow-hidden">
-        <img
-          src={product?.productImage}
-          className="w-full h-auto object-cover"
-        />
+        <div className="relative">
+          <img
+            src={product?.productImage}
+            className="w-full h-auto object-cover rounded-lg"
+          />
+          {product?.isOutOfStock && (
+            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-gradient-to-br from-black/70 via-black/50 to-black/70 backdrop-blur-[1px]">
+              <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-4 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">
+                <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-rose-500/20 to-red-500/20" />
+                <span className="relative text-sm font-semibold uppercase tracking-[0.2em] text-white">
+                  Out of Stock
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
       <div className="max-w-[488px] flex flex-col gap-5">
         <h1 className="text-2xl font-semibold text-[#1ECBAF]">
           {product?.productName}
         </h1>
         <p className="text-base font-semibold text-[#0185E4]">{`Minable Coins - ${product?.cryptoCurrency?.join(
-          ", "
+          ", ",
         )}`}</p>
         <p className="text-base font-normal text-[#D9EFFF]">
           {product?.description}

@@ -84,6 +84,7 @@ export default function BuyMinersSection() {
                     img={x.productImage}
                     price={x.price}
                     slug={x.slug}
+                    isOutOfStock={x.isOutOfStock}
                   />
                 ))}
           </div>

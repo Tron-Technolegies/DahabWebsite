@@ -18,6 +18,7 @@ export default function BestSellingProducts({ products }) {
               name={x.productName}
               price={x.price}
               slug={x.slug}
+              isOutOfStock={x.isOutOfStock}
             />
           ))}
       </div>

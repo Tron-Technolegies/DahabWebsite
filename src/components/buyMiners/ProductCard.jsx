@@ -3,7 +3,14 @@ import { IoMdAddCircleOutline } from "react-icons/io";
 import { handleProductEnquiry } from "../../utils/whatsapp";
 import { Link } from "react-router-dom";
 
-export default function ProductCard({ bgwhite, img, name, price, slug }) {
+export default function ProductCard({
+  bgwhite,
+  img,
+  name,
+  price,
+  slug,
+  isOutOfStock,
+}) {
   return (
     <Link
       to={`/buy-bitcoin-miners-uae/${slug}`}
@@ -11,11 +18,23 @@ export default function ProductCard({ bgwhite, img, name, price, slug }) {
     >
       {/* Top: Image + Name + Price */}
       <div className="flex flex-col items-center gap-5 flex-grow px-3">
-        <img
-          className="w-[200px] h-[200px] overflow-hidden object-contain"
-          src={img}
-          alt={"Buy Bitcoin Miners UAE"}
-        />
+        <div className="relative w-[200px] h-[200px] overflow-hidden rounded-lg">
+          <img
+            className="w-full h-full object-contain"
+            src={img}
+            alt={"Buy Bitcoin Miners UAE"}
+          />
+          {isOutOfStock && (
+            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-gradient-to-br from-black/70 via-black/50 to-black/70 backdrop-blur-[1px]">
+              <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-4 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">
+                <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-rose-500/20 to-red-500/20" />
+                <span className="relative text-sm font-semibold uppercase tracking-[0.2em] text-white">
+                  Out of Stock
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
         <h3 className="text-xl text-center font-medium">{name}</h3>
         <p className="text-xl font-semibold text-[#F79009]">{`AED ${price}`}</p>
       </div>
