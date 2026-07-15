@@ -36,16 +36,6 @@ export default function SingleMinerTop({ product }) {
             src={product?.productImage}
             className="w-full h-auto object-cover rounded-lg"
           />
-          {product?.isOutOfStock && (
-            <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-gradient-to-br from-black/70 via-black/50 to-black/70 backdrop-blur-[1px]">
-              <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 px-4 py-2 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">
-                <div className="absolute inset-0 bg-gradient-to-r from-red-500/20 via-rose-500/20 to-red-500/20" />
-                <span className="relative text-sm font-semibold uppercase tracking-[0.2em] text-white">
-                  Out of Stock
-                </span>
-              </div>
-            </div>
-          )}
         </div>
       </div>
       <div className="max-w-[488px] flex flex-col gap-5">
@@ -58,13 +48,20 @@ export default function SingleMinerTop({ product }) {
         <p className="text-base font-normal text-[#D9EFFF]">
           {product?.description}
         </p>
-        <div className="flex flex-col gap-1">
-          <p className="text-sm font-semibold text-[#F79009]">{`Price - AED ${product?.price}`}</p>
-          <p className="text-xs font-semibold text-[#F79009] flex gap-2 items-center">
-            <MdLocalShipping />
-            Free Shipping - No hidden charges
-          </p>
-        </div>
+        {product?.isOutOfStock ? (
+          <span className="p-3 w-fit rounded-md text-sm font-semibold uppercase tracking-[0.2em] text-white bg-gradient-to-r from-red-500/20 via-rose-500/20 to-red-500/20">
+            Out of Stock
+          </span>
+        ) : (
+          <div className="flex flex-col gap-1">
+            <p className="text-sm font-semibold text-[#F79009]">{`Price - AED ${product?.price}`}</p>
+            <p className="text-xs font-semibold text-[#F79009] flex gap-2 items-center">
+              <MdLocalShipping />
+              Free Shipping - No hidden charges
+            </p>
+          </div>
+        )}
+
         <div className="flex justify-between">
           <div className="flex flex-col gap-1">
             <div className="w-10 h-10 bg-[#0194FE] rounded-full text-xl text-gray-200 flex justify-center items-center">
