@@ -8,6 +8,7 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { number } from "../utils/whatsapp";
 
 const FooterLinks = ({ link, icon }) => (
   <a
@@ -193,10 +194,10 @@ export default function Footer() {
               </div>
               <div
                 className="flex gap-3 items-center hover:text-[#0194FE] cursor-pointer transition-colors duration-300"
-                onClick={() => (window.location.href = "tel:+971543888454")}
+                onClick={() => (window.location.href = `tel:${number}`)}
               >
                 <CiPhone className="text-xl flex-shrink-0" />
-                <p>+971543888454</p>
+                <p>{number}</p>
               </div>
             </div>
           </motion.div>

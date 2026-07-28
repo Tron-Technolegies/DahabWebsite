@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FormInput from "../../FormInput";
 import PhoneInput from "react-phone-input-2";
-
-import { handleEnquiryFormClick } from "../../../utils/whatsapp";
+import { handleEnquiryFormClick, number } from "../../../utils/whatsapp";
 import { CiLocationOn, CiMail, CiPhone } from "react-icons/ci";
 import ContactDetailSingleElt from "./ContactDetailSingleElt";
 import { toast } from "react-toastify";
@@ -119,10 +118,7 @@ export default function AboutPageContactSection() {
                 icon={<CiMail />}
                 content="Rizwan@dahabminers.ae"
               />
-              <ContactDetailSingleElt
-                icon={<CiPhone />}
-                content="+971543888454"
-              />
+              <ContactDetailSingleElt icon={<CiPhone />} content={number} />
             </div>
           </div>
         </div>
