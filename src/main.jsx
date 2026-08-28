@@ -1,5 +1,5 @@
 import { StrictMode, useEffect } from "react";
-import { createRoot, hydrateRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { ToastContainer } from "react-toastify";
 import { HelmetProvider } from "react-helmet-async";
 import App from "./App.jsx";
@@ -16,23 +16,11 @@ function LazyLoadToastContainer() {
 }
 
 const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrateRoot(
-    rootElement,
-    <Provider store={store}>
-      <LazyLoadToastContainer />
-      <HelmetProvider>
-        <App />
-      </HelmetProvider>
-    </Provider>,
-  );
-} else {
-  createRoot(rootElement).render(
-    <Provider store={store}>
-      <LazyLoadToastContainer />
-      <HelmetProvider>
-        <App />
-      </HelmetProvider>
-    </Provider>,
-  );
-}
+createRoot(rootElement).render(
+  <Provider store={store}>
+    <LazyLoadToastContainer />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
+  </Provider>,
+);

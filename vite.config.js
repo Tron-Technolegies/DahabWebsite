@@ -25,19 +25,6 @@ export default defineConfig({
     react(),
     createHtmlPlugin({
       minify: true,
-      inject: {
-        data: {
-          preloadCss: (() => {
-            const cssDir = path.resolve(__dirname, "dist/assets");
-            if (!fs.existsSync(cssDir)) return "";
-            const files = fs.readdirSync(cssDir);
-            const cssFile = files.find((f) => f.endsWith(".css"));
-            if (!cssFile) return "";
-            return `<link rel="preload" href="/assets/${cssFile}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/assets/${cssFile}"></noscript>`;
-          })(),
-        },
-      },
     }),
   ],
 });
