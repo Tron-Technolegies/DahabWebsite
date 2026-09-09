@@ -1,4 +1,4 @@
-export const number = "+971509669623";
+export const number = "+971 508134022";
 
 export const handleChatClick = () => {
   const phoneNumber = number; // Replace with the actual phone number
@@ -9,13 +9,7 @@ export const handleChatClick = () => {
   window.open(whatsappUrl, "_blank");
 };
 
-export const handleEnquiryFormClick = ({
-  firstName,
-  lastName,
-  email,
-  phone,
-  message,
-}) => {
+export const handleEnquiryFormClick = ({ firstName, lastName, email, phone, message }) => {
   const phoneNumber = number;
   const messageContent = `FIRST NAME : ${firstName}\n LAST NAME : ${lastName}\n EMAIL : ${email}\n PHONE : ${phone}\n MESSAGE : ${message}`;
   const encodedMessage = encodeURIComponent(messageContent);
