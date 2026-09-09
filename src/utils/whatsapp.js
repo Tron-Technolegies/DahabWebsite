@@ -1,4 +1,4 @@
-export const number = "+971 508134022";
+export const number = "+971508134022";
 
 export const handleChatClick = () => {
   const phoneNumber = number; // Replace with the actual phone number
